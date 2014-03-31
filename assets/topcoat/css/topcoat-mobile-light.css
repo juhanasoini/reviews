@@ -1518,7 +1518,7 @@ input[type="checkbox"]:disabled:active + .topcoat-checkbox__checkmark:before {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow: auto;
+  overflow: visible;
   -webkit-overflow-scrolling: touch;
 }
 
