@@ -13,6 +13,10 @@ var EmployeeView = function(adapter, template, employee) {
     this.addLocation = function(event) {
         event.preventDefault();
         console.log( navigator.geolocation );
+        console.log( navigator.geolocation.getCurrentPosition(
+        function(position) {
+                        alert( position.coords.latitude + ',' + position.coords.longitude );
+                    }) );
         navigator.geolocation.getCurrentPosition(
             function(position) {
                 alert( position.coords.latitude + ',' + position.coords.longitude );
