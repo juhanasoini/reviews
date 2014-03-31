@@ -19,9 +19,9 @@
 
     <gap:platform name="android" />
 
-    <gap:plugin name="Contacts" value="org.apache.cordova.dialogs" />
-    <gap:plugin name="Contacts" value="org.apache.cordova.device" />
-    <gap:plugin name="Contacts" value="org.apache.cordova.console" />
-    <gap:plugin name="Contacts" value="org.apache.cordova.geolocation" />
+    <gap:plugin name="Notification" value="org.apache.cordova.dialogs" />
+    <gap:plugin name="Device" value="org.apache.cordova.device" />
+    <gap:plugin name="Console" value="org.apache.cordova.console" />
+    <gap:plugin name="Geolocation" value="org.apache.cordova.geolocation" />
 
 </widget>
