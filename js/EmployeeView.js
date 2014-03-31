@@ -15,11 +15,9 @@ var EmployeeView = function(adapter, template, employee) {
         console.log( "OKI" );
         navigator.geolocation.getCurrentPosition(
             function(position) {
-                alert(position.coords.latitude + ',' + position.coords.longitude);
                 console.log( position.coords.latitude + ',' + position.coords.longitude );
             },
             function() {
-                alert('Error getting location');
                 console.log('Error getting location');
             });
         return false;
