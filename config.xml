@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.coenraets.workshop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Workshop</name>
+<widget id="com.juhana.workshop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Reviews</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -9,4 +9,14 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <preference name="DisallowOverscroll" value="true" />
+
+    <gap:platform name="android" />
+
+    <gap:plugin name="Contacts" value="org.apache.cordova.dialogs" />
+    <gap:plugin name="Contacts" value="org.apache.cordova.device" />
+    <gap:plugin name="Contacts" value="org.apache.cordova.console" />
+    <gap:plugin name="Contacts" value="org.apache.cordova.geolocation" />
+
 </widget>
