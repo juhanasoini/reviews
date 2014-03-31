@@ -6,15 +6,14 @@ var EmployeeView = function(adapter, template, employee) {
     };
     
     this.render = function() {
-        this.el.html( template( employee ) );
+        this.el.html(template(employee));
         return this;
     };
 
     this.addLocation = function(event) {
         event.preventDefault();
-        console.log( navigator.geolocation );
         navigator.geolocation.getCurrentPosition(
-            function( position ) {
+            function(position) {
                 alert( position.coords.latitude + ',' + position.coords.longitude );
             },
             function() {
@@ -22,7 +21,6 @@ var EmployeeView = function(adapter, template, employee) {
             });
         return false;
     };
-    
     this.initialize();
 
 }
