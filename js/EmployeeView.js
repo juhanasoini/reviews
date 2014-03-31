@@ -12,7 +12,7 @@ var EmployeeView = function(adapter, template, employee) {
 
     this.addLocation = function(event) {
         event.preventDefault();
-        console.log( "OKI" );
+        alert( "OKI" );
         navigator.geolocation.getCurrentPosition(
             function(position) {
                 console.log( position.coords.latitude + ',' + position.coords.longitude );
