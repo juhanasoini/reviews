@@ -6,22 +6,23 @@ var EmployeeView = function(adapter, template, employee) {
     };
     
     this.render = function() {
-        this.el.html(template(employee));
+        this.el.html( template( employee ) );
         return this;
     };
 
     this.addLocation = function(event) {
         event.preventDefault();
-        alert( "OKI" );
+        console.log( navigator.geolocation );
         navigator.geolocation.getCurrentPosition(
-            function(position) {
-                console.log( position.coords.latitude + ',' + position.coords.longitude );
+            function( position ) {
+                alert( position.coords.latitude + ',' + position.coords.longitude );
             },
             function() {
-                console.log('Error getting location');
+                alert('Error getting location');
             });
         return false;
     };
+    
     this.initialize();
 
 }
